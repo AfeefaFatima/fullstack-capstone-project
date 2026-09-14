@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { MongoClient, ObjectId } from "mongodb";
-const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017", dbName = process.env.DB_NAME || "giftlink";
+const uri = process.env.MONGODB_URI , dbName = process.env.DB_NAME;
 const client = new MongoClient(uri); await client.connect(); const db = client.db(dbName);
 await db.collection("gifts").deleteMany({});
 const ids = ["650000000000000000000001", "650000000000000000000002",

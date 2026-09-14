@@ -1,4 +1,23 @@
 # Run against the deployed backend after deployment
-curl https://<YOUR-BACKEND-URL>/api/gifts
+curl https://giftlink-backend-nine.vercel.app/
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"name":"GiftLink API","status":"running"}
+RawContent        : HTTP/1.1 200 OK
+                    Access-Control-Allow-Origin: *
+                    Age: 0
+                    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+                    X-Vercel-Cache: MISS
+                    X-Vercel-Id: bom1::iad1::4tksw-1789418680475-140...
+Forms             : {}
+Headers           : {[Access-Control-Allow-Origin, *], [Age, 0], [Strict-Transport-Security, max-age=63072000; 
+                    includeSubDomains; preload], [X-Vercel-Cache, MISS]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 42
+
 
 # Expected: JSON array containing the 16 seeded GiftLink items.

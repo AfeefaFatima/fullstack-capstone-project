@@ -1,3 +1,5 @@
-curl -X POST https://<YOUR-BACKEND-URL>/api/auth/login -H "Content-Type: application/json" -d '{"email":"student@example.com","password":"Pass1234"}'
+PS D:\AFEEFA WORK\Github\Coursera Projects\fullstack-capstone-project\fullstack-capstone-project> curl.exe -X POST "https://giftlink-backend-nine.vercel.app/api/auth/login" -H "Content-Type: application/json" --data-binary "@login-test.json"
+{"user":{"id":"6aa87452aacbb97bee626c8e","name":"GiftLink Student","email":"student@example.com","city":"","phone":"","bio":""},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYTg3NDUyYWFjYmI5N2JlZTYyNmM4ZSIsImVtYWlsIjoic3R1ZGVudEBleGFtcGxlLmNvbSIsIm5hbWUiOiJHaWZ0TGluayBTdHVkZW50IiwiaWF0IjoxNzg5NDI0OTE1LCJleHAiOjE3ODk0MzIxMTV9.fJ4eFZBVxOcmlwIFFxaYz8i0k_6V9WAm_XJ0gEUhoz4"}
+
 
 # Expected: JSON response containing user and JWT token.

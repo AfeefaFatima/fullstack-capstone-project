@@ -1,3 +1,26 @@
-curl https://<YOUR-BACKEND-URL>/api/gifts/650000000000000000000001
+
+PS D:\AFEEFA WORK\Github\Coursera Projects\fullstack-capstone-project\fullstack-capstone-project> curl https://giftlink-backend-nine.vercel.app/api/gifts/650000000000000000000001 
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"_id":"650000000000000000000001","title":"Wooden Chair","description":"A useful wooden chair 
+                    available for free through GiftLink.","category":"Furniture","condition":"Like 
+                    New","location":"Islamabad"...}
+RawContent        : HTTP/1.1 200 OK
+                    Access-Control-Allow-Origin: *
+                    Age: 0
+                    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+                    X-Vercel-Cache: MISS
+                    X-Vercel-Id: bom1::iad1::5vfgd-1789425064726-1bf...
+Forms             : {}
+Headers           : {[Access-Control-Allow-Origin, *], [Age, 0], [Strict-Transport-Security, max-age=63072000; 
+                    includeSubDomains; preload], [X-Vercel-Cache, MISS]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 329
+
 
 # Expected: JSON object for the Wooden Chair item.
