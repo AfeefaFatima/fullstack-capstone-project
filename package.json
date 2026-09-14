@@ -1,0 +1,1 @@
+{"name":"giftlink-capstone","private":true,"scripts":{"install:all":"npm --prefix backend install && npm --prefix frontend install","seed":"node scripts/seed.js"}}

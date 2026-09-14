@@ -1,0 +1,4 @@
+# Paste the successful GitHub Actions workflow output here after pushing to GitHub.
+# The workflow file is .github/workflows/ci-cd.yml
+# Required evidence: checkout, Node setup, backend install, frontend install,
+# natural import, MongoDB seed, frontend build, Docker Compose config, completion.

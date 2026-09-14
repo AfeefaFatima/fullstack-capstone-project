@@ -1,0 +1,4 @@
+# Run against the deployed backend after deployment
+curl https://<YOUR-BACKEND-URL>/api/gifts
+
+# Expected: JSON array containing the 16 seeded GiftLink items.

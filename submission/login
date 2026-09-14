@@ -1,0 +1,3 @@
+curl -X POST https://<YOUR-BACKEND-URL>/api/auth/login -H "Content-Type: application/json" -d '{"email":"student@example.com","password":"Pass1234"}'
+
+# Expected: JSON response containing user and JWT token.

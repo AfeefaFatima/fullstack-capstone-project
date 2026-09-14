@@ -1,0 +1,9 @@
+Run from the repository root after MongoDB is running:
+
+node scripts/seed.js
+
+Expected terminal evidence:
+inserted_items: 16
+{ ... 16 inserted ObjectId values ... }
+
+For the actual assignment, paste the real terminal output produced by your run here.

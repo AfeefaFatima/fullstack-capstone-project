@@ -1,0 +1,41 @@
+name: GiftLink CI/CD
+on:
+  push:
+    branches: ["main","dev"]
+  pull_request:
+    branches: ["main"]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:8
+        ports: [27017:27017]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install backend dependencies
+        run: npm install
+        working-directory: backend
+      - name: Install frontend dependencies
+        run: npm install
+        working-directory: frontend
+      - name: Verify natural import
+        run: node -e "import('./index.js').then(()=>console.log('natural import OK'))"
+        working-directory: backend
+      - name: Seed 16 MongoDB documents
+        env:
+          MONGODB_URI: mongodb://127.0.0.1:27017
+          DB_NAME: giftlink_ci
+        run: node scripts/seed.js
+      - name: Build frontend
+        run: npm run build
+        working-directory: frontend
+      - name: Docker compose config
+        run: docker compose config
+      - name: CI/CD complete
+        run: echo "GiftLink CI/CD successful"

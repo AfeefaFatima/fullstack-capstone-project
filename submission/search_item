@@ -1,0 +1,3 @@
+curl "https://<YOUR-BACKEND-URL>/api/search?q=chair&category=Furniture"
+
+# Expected: JSON array containing chair items in the Furniture category.

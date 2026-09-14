@@ -1,0 +1,10 @@
+import express from "express";
+import { connectToDatabase } from "../config/db.js";
+import { register,login,updateUser } from "../controllers/authController.js";
+import { authMiddleware } from "../middleware/authMiddleware.js";
+const router=express.Router();
+router.use(async(req,res,next)=>{try{await connectToDatabase();next();}catch(e){next(e);}});
+router.post("/register",register);
+router.post("/login",login);
+router.put("/profile",authMiddleware,updateUser);
+export default router;
