@@ -29,8 +29,8 @@ jobs:
         working-directory: backend
       - name: Seed 16 MongoDB documents
         env:
-          MONGODB_URI: mongodb://127.0.0.1:27017
-          DB_NAME: giftlink_ci
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          DB_NAME: ${{ secrets.DB_NAME }}
         run: node scripts/seed.js
       - name: Build frontend
         run: npm run build
