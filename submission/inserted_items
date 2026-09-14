@@ -1,9 +1,20 @@
-Run from the repository root after MongoDB is running:
-
-node scripts/seed.js
-
-Expected terminal evidence:
+PS D:\AFEEFA WORK\Github\Coursera Projects\fullstack-capstone-project\fullstack-capstone-project> node scripts/seed.js
 inserted_items: 16
-{ ... 16 inserted ObjectId values ... }
-
-For the actual assignment, paste the real terminal output produced by your run here.
+{
+  '0': new ObjectId('650000000000000000000001'),
+  '1': new ObjectId('650000000000000000000002'),
+  '2': new ObjectId('650000000000000000000003'),
+  '3': new ObjectId('650000000000000000000004'),
+  '4': new ObjectId('650000000000000000000005'),
+  '5': new ObjectId('650000000000000000000006'),
+  '6': new ObjectId('650000000000000000000007'),
+  '7': new ObjectId('650000000000000000000008'),
+  '8': new ObjectId('650000000000000000000009'),
+  '9': new ObjectId('650000000000000000000010'),
+  '10': new ObjectId('650000000000000000000011'),
+  '11': new ObjectId('650000000000000000000012'),
+  '12': new ObjectId('650000000000000000000013'),
+  '13': new ObjectId('650000000000000000000014'),
+  '14': new ObjectId('650000000000000000000015'),
+  '15': new ObjectId('650000000000000000000016')
+}
